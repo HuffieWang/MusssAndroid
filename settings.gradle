@@ -1,0 +1,19 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public'}
+        maven { url 'https://maven.aliyun.com/repository/google'}
+        maven { url "https://jitpack.io" }
+        maven { url 'https://esri.jfrog.io/artifactory/arcgis' }
+        maven { url "https://dl.bintray.com/relish-wang/maven/" }
+    }
+}
+rootProject.name = "Musss"
+include ':core'
